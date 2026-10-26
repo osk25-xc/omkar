@@ -1,56 +1,30 @@
-# MIS Monthly Reporting Automation | Excel
+# Analytics & MIS Portfolio Projects
 
-A practical, portfolio-ready MIS reporting project built around a synthetic retail dataset. The goal is to turn monthly sales and operations data into a repeatable management report—not just a chart.
+A collection of practical data-analysis and reporting projects using synthetic or project-provided datasets. Each project should be validated before presenting results as business findings.
 
-## Business scenario
-A retail operations team needs one monthly report to compare actual sales with targets, review regional and department performance, and track order delivery, pending orders, and returns.
+## Featured projects
 
-## Dataset
-- **File:** `data/mis_monthly_data.csv`
-- **Rows:** 240 monthly records (12 months × 5 regions × 4 departments)
-- **Period:** January–December 2025
-- **Data status:** Synthetic practice data created for this portfolio project; it is not real company data.
+| Project | Focus | Tools | Status |
+|---|---|---|---|
+| [MIS Monthly Reporting Automation](README.md) | Monthly sales vs target, profit, region/department reporting, delivery and returns KPIs | Excel, CSV | Dataset and build guide available; workbook is a local starter file and still needs final verification |
+| [E-commerce Customer & Revenue Deep Dive](https://github.com/osk25-xc/SQL-Business-Sales-Analysis/blob/main/sql/09_customer_revenue_deep_dive.sql) | Monthly revenue changes, customer ranking, category profitability, repeat-customer summary, quality checks | MySQL, SQL, CTEs, window functions | SQL script added; run against the repository schema/data and validate outputs |
+| [Operations & Inventory Dashboard](projects/operations-inventory-dashboard/README.md) | Stock movement, closing stock, reorder risk, inventory value, warehouse/category comparisons | Power BI, Power Query, DAX | Project guide and synthetic sample CSV available; PBIX dashboard still needs to be built |
+| [Data Cleaning & Quality Audit](projects/data-quality-audit/README.md) | Missing values, duplicates, invalid ranges, reconciliation checks | Python, Pandas | Reusable audit script available in the Retail Customer Segmentation repository |
 
-## KPIs to build in Excel
-| KPI | Definition |
-|---|---|
-| Total Actual Sales | Sum of `Actual_Sales` |
-| Total Target Sales | Sum of `Target_Sales` |
-| Target Achievement % | Actual Sales ÷ Target Sales |
-| Sales Variance | Actual Sales − Target Sales |
-| Profit | Actual Sales − Cost |
-| Profit Margin % | Profit ÷ Actual Sales |
-| Delivery Rate % | Orders Delivered ÷ Orders Received |
-| Pending Orders | Sum of `Pending_Orders` |
-| Return Rate % | Returns ÷ Orders Delivered |
+## MIS project dataset
+- `data/mis_monthly_data.csv`: synthetic monthly sales and operations practice data.
+- `docs/excel-formulas.md`: formulas and dashboard build notes.
+- `docs/data-dictionary.md`: field definitions and assumptions.
 
-## Workbook build
-1. Import the CSV into Excel and format it as a table named `SalesData`.
-2. Add calculated columns using the formulas in [Excel formulas](docs/excel-formulas.md).
-3. Create PivotTables for monthly trend, region performance, department performance, and order operations.
-4. Add slicers for Region and Department, plus a Month timeline where available.
-5. Build a one-page dashboard with KPI cards, monthly sales vs target, region comparison, department performance, and an operations summary.
-6. Validate totals against the source data before sharing the report.
+## Inventory sample data
+- `data/inventory_operations_sample.csv`: 20 synthetic product/warehouse rows for Power BI practice.
+- The dataset is fictional and should not be described as real company data.
 
-## Suggested report layout
-- **Top:** Actual Sales, Target Sales, Achievement %, Profit, Pending Orders
-- **Middle:** Monthly Actual vs Target line/column chart and sales by region
-- **Bottom:** Department performance and delivery/returns summary
-- **Filters:** Region, Department, Month
-
-## Repository structure
-```
-data/
-  mis_monthly_data.csv
-docs/
-  excel-formulas.md
-  data-dictionary.md
-```
-
-## Tools
-Microsoft Excel (Tables, formulas, PivotTables, charts, slicers). Power Query is optional for repeatable refresh.
-
-## Important note
-This repository currently provides the source dataset and build specification. Add screenshots of the completed workbook and verified findings after the dashboard is built; no business outcome is claimed before that validation.
+## How to work with this portfolio
+1. Read each project guide and confirm the dataset schema.
+2. Recalculate KPIs from source data rather than copying unverified totals.
+3. Document assumptions and data limitations.
+4. Add screenshots, completed workbooks, PBIX files, and validated findings when available.
+5. Do not claim business impact or finished dashboard features that have not been tested.
 
 Maintained by [Omkar S. Kshirsagar](https://github.com/osk25-xc).
