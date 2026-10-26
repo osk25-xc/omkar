@@ -1,0 +1,21 @@
+Product_ID,Product_Name,Category,Warehouse,Opening_Stock,Stock_In,Units_Sold,Reorder_Level,Unit_Cost,Unit_Price
+P001,Wireless Mouse,Electronics,West,120,40,95,30,350,599
+P002,Keyboard,Electronics,West,90,25,72,25,650,999
+P003,USB-C Cable,Electronics,Central,200,80,170,50,90,199
+P004,Monitor Stand,Electronics,Central,60,15,42,20,700,1199
+P005,Face Wash,Beauty,West,150,60,140,40,110,199
+P006,Moisturizer,Beauty,East,110,30,95,35,180,329
+P007,Lip Balm,Beauty,Central,180,50,160,45,45,99
+P008,Shampoo,Beauty,East,130,45,125,40,95,179
+P009,Storage Box,Home & Kitchen,North,100,35,88,30,220,399
+P010,Water Bottle,Home & Kitchen,West,160,50,145,40,130,249
+P011,Kitchen Scale,Home & Kitchen,Central,55,20,48,18,420,749
+P012,LED Lamp,Home & Kitchen,North,75,25,66,22,280,499
+P013,T-Shirt,Fashion,East,140,60,125,35,190,399
+P014,Jeans,Fashion,West,85,25,77,24,520,999
+P015,Backpack,Fashion,Central,65,30,58,20,600,1099
+P016,Cap,Fashion,North,120,40,105,30,100,249
+P017,Power Bank,Electronics,East,70,20,62,22,850,1399
+P018,Hair Dryer,Beauty,North,45,15,38,15,500,899
+P019,Food Container,Home & Kitchen,East,190,70,175,50,80,159
+P020,Running Shoes,Fashion,Central,50,18,44,16,900,1599
