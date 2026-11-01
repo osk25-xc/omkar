@@ -1,30 +1,37 @@
 # Analytics & MIS Portfolio Projects
 
-A collection of practical data-analysis and reporting projects using synthetic or project-provided datasets. Each project should be validated before presenting results as business findings.
+A central portfolio repository for practical data-analysis, MIS reporting, and business-intelligence work. The projects use practice or synthetic datasets unless a source is explicitly identified.
 
-## Featured projects
+## Project index
 
-| Project | Focus | Tools | Status |
+| Project | Business focus | Tools | Current scope |
 |---|---|---|---|
-| [MIS Monthly Reporting Automation](README.md) | Monthly sales vs target, profit, region/department reporting, delivery and returns KPIs | Excel, CSV | Dataset and build guide available; workbook is a local starter file and still needs final verification |
-| [E-commerce Customer & Revenue Deep Dive](https://github.com/osk25-xc/SQL-Business-Sales-Analysis/blob/main/sql/09_customer_revenue_deep_dive.sql) | Monthly revenue changes, customer ranking, category profitability, repeat-customer summary, quality checks | MySQL, SQL, CTEs, window functions | SQL script added; run against the repository schema/data and validate outputs |
-| [Operations & Inventory Dashboard](projects/operations-inventory-dashboard/README.md) | Stock movement, closing stock, reorder risk, inventory value, warehouse/category comparisons | Power BI, Power Query, DAX | Project guide and synthetic sample CSV available; PBIX dashboard still needs to be built |
-| [Data Cleaning & Quality Audit](projects/data-quality-audit/README.md) | Missing values, duplicates, invalid ranges, reconciliation checks | Python, Pandas | Reusable audit script available in the Retail Customer Segmentation repository |
+| [MIS Monthly Reporting](README.md) | Sales vs target, profit, regions, departments, delivery and returns | Excel, CSV | Dataset and reporting guide |
+| [E-commerce SQL Analysis](https://github.com/osk25-xc/SQL-Business-Sales-Analysis) | Revenue, customer contribution and category performance | MySQL | SQL scripts; run and validate against the project schema |
+| [Operations & Inventory Dashboard](projects/operations-inventory-dashboard/README.md) | Stock, reorder risk and warehouse reporting | Power BI | Guide and sample data; dashboard completion should be verified |
+| [Data Quality Audit](https://github.com/osk25-xc/Retail-Customer-Segmentation) | Missing values, duplicates and validation rules | Python, Pandas | Audit script in the linked repository |
 
-## MIS project dataset
-- `data/mis_monthly_data.csv`: synthetic monthly sales and operations practice data.
-- `docs/excel-formulas.md`: formulas and dashboard build notes.
-- `docs/data-dictionary.md`: field definitions and assumptions.
+## MIS practice data
 
-## Inventory sample data
-- `data/inventory_operations_sample.csv`: 20 synthetic product/warehouse rows for Power BI practice.
-- The dataset is fictional and should not be described as real company data.
+- `data/mis_monthly_data.csv` — synthetic monthly sales and operations data.
+- `docs/excel-formulas.md` — formula and dashboard build notes.
+- `docs/data-dictionary.md` — field definitions and assumptions.
 
-## How to work with this portfolio
-1. Read each project guide and confirm the dataset schema.
-2. Recalculate KPIs from source data rather than copying unverified totals.
-3. Document assumptions and data limitations.
-4. Add screenshots, completed workbooks, PBIX files, and validated findings when available.
-5. Do not claim business impact or finished dashboard features that have not been tested.
+## Inventory practice data
+
+- `data/inventory_operations_sample.csv` — fictional product and warehouse records for practice.
+- See the linked project guide for intended analysis and limitations.
+
+## Reproducibility checklist
+
+1. Read the project guide and inspect the source columns.
+2. Confirm metric definitions before calculating KPIs.
+3. Reconcile summaries to the underlying records.
+4. Record assumptions, exclusions, and data limitations.
+5. Add screenshots and numerical findings only after verifying the actual output.
+
+## Portfolio standards
+
+This repository is a learning and portfolio workspace. Synthetic data must not be presented as real company data, and planned features must not be described as completed until they have been tested.
 
 Maintained by [Omkar S. Kshirsagar](https://github.com/osk25-xc).
